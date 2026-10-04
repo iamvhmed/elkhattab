@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجموعة الخطاب | لتوريد الأرز الفاخر للفنادق والشركات (B2B)</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { cairo: ['Cairo', 'sans-serif'] },
+          colors: {
+            brandRed: '#dc2626',
+            brandDarkRed: '#991b1b',
+            brandBlack: '#09090b',
+            brandCard: '#141418'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Cairo', sans-serif; background-color: #09090b; color: #f4f4f5; }
+    .red-glow { box-shadow: 0 0 25px rgba(220, 38, 38, 0.35); }
+    .card-hover:hover { transform: translateY(-6px); border-color: #dc2626; transition: all 0.3s ease; }
+  </style>
+</head>
+<body class="bg-brandBlack text-gray-100 antialiased selection:bg-brandRed selection:text-white">
+
+  <!-- شريط التنبيه العلوي للـ B2B -->
+  <div class="bg-gradient-to-r from-brandDarkRed via-brandRed to-brandDarkRed text-white text-xs md:text-sm py-2.5 px-4 text-center font-semibold">
+    <i class="fa-solid fa-building-shield ml-2"></i>
+    بوابة التوريدات المؤسسية (B2B): البيع والتوريد مخصص للفنادق، المطاعم، شركات الإعاشة، وتجار الجملة فقط (أقل كمية للطلب: 1 طن)
+  </div>
+
+  <!-- الهيدر / Navbar -->
+  <header class="sticky top-0 z-50 bg-brandBlack/90 backdrop-blur-md border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- اللوجو -->
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl bg-brandRed flex items-center justify-center text-white text-2xl font-black red-glow">
+          خ
+        </div>
+        <div>
+          <h1 class="text-xl md:text-2xl font-black tracking-wide text-white">مجموعة <span class="text-brandRed">الخطاب</span></h1>
+          <p class="text-xs text-zinc-400">لإنتاج وتوريد الأرز الفندقي الفاخر</p>
+        </div>
+      </div>
+
+      <!-- روابط التنقل -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-zinc-300">
+        <a href="#about" class="hover:text-brandRed transition">عن المجموعة</a>
+        <a href="#catalog" class="hover:text-brandRed transition">أصناف التوريد والمواصفات</a>
+        <a href="#blog" class="hover:text-brandRed transition">مدونة الجودة والشيفات</a>
+        <a href="#contact" class="hover:text-brandRed transition">تواصل مع المبيعات</a>
+      </nav>
+
+      <!-- أزرار التواصل السريع -->
+      <div class="flex items-center gap-3">
+        <button onclick="openDirectChat('السلام عليكم، محتاج أستفسر عن قائمة أسعار توريد الأرز للشركات والفنادق')"
+           class="bg-brandRed hover:bg-red-700 text-white px-4 py-2.5 rounded-lg text-xs md:text-sm font-bold flex items-center gap-2 red-glow transition">
+          <i class="fa-brands fa-facebook-messenger text-lg"></i>
+          <span>مبيعات الماسنجر</span>
+        </button>
+        <a href="tel:+201096741376"
+           class="border border-zinc-700 hover:border-brandRed bg-zinc-900 text-white px-3.5 py-2.5 rounded-lg text-xs md:text-sm font-bold flex items-center gap-2 transition">
+          <i class="fa-solid fa-phone-volume text-brandRed"></i>
+          <span class="hidden sm:inline">01096741376</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- القسم الرئيسي Hero Section -->
+  <section id="about" class="relative overflow-hidden py-20 md:py-28 border-b border-zinc-800">
+    <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-brandBlack via-brandBlack/85 to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block bg-brandRed/15 border border-brandRed/40 text-brandRed px-4 py-1.5 rounded-full text-xs md:text-sm font-bold mb-6">
+        الشريك المعتمد لأكثر من 180 فندق وسلسلة مطاعم في مصر
+      </span>
+      <h2 class="text-3xl md:text-6xl font-black text-white leading-tight max-w-4xl mx-auto mb-6">
+        جودة أرز قياسية.. متفصلة على مقاس <span class="text-brandRed">المطابخ الفندقية الكبرى</span>
+      </h2>
+      <p class="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+        في مضارب "الخطاب"، نتحكم بدقة إلكترونية في حجم الحبة (عريضة أو رفيعة) ونسب الكسر (1%، 3%، 5%، 10%) لضمان ثبات الطعم ومعدل التشرب في كل شكارة تدخل مخازن منشأتك.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="openOrderModal('أرز أبيض بلدي إكسترا فندقي (حبة عريضة - كسر 3%)')"
+           class="w-full sm:w-auto bg-brandRed hover:bg-red-700 text-white px-8 py-4 rounded-xl text-base font-black flex items-center justify-center gap-3 red-glow transition">
+          <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+          اطلب عرض سعر أو احجز كمية عبر ماسنجر (رد ذكي 24/7)
+        </button>
+        <a href="tel:+201096741376"
+           class="w-full sm:w-auto bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center gap-3 transition">
+          <i class="fa-solid fa-headset text-brandRed text-xl"></i>
+          تحدث مع مدير التوريدات: 01096741376
+        </a>
+      </div>
+
+      <!-- إحصائيات الثقة -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-zinc-800/80">
+        <div class="bg-brandCard p-5 rounded-2xl border border-zinc-800">
+          <p class="text-3xl font-black text-brandRed">+25,000</p>
+          <p class="text-xs md:text-sm text-zinc-400 mt-1">طن قدرة توريد سنوية</p>
+        </div>
+        <div class="bg-brandCard p-5 rounded-2xl border border-zinc-800">
+          <p class="text-3xl font-black text-white">99.9%</p>
+          <p class="text-xs md:text-sm text-zinc-400 mt-1">نقاء فرز ليزر (Sortex)</p>
+        </div>
+        <div class="bg-brandCard p-5 rounded-2xl border border-zinc-800">
+          <p class="text-3xl font-black text-brandRed">1% - 10%</p>
+          <p class="text-xs md:text-sm text-zinc-400 mt-1">تدرج دقيق في نسب الكسر</p>
+        </div>
+        <div class="bg-brandCard p-5 rounded-2xl border border-zinc-800">
+          <p class="text-3xl font-black text-white">24 ساعة</p>
+          <p class="text-xs md:text-sm text-zinc-400 mt-1">توصيل لمخازن الفنادق والمطاعم</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- كتالوج أصناف التوريد B2B (الـ 5 أصناف بدون ظهور الكود) -->
+  <section id="catalog" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <span class="text-brandRed font-bold text-sm uppercase tracking-wider">مواصفات التوريد القياسية</span>
+      <h3 class="text-2xl md:text-4xl font-black text-white mt-2">أصناف أرز "الخطاب" للفنادق والشركات</h3>
+      <p class="text-zinc-400 text-sm mt-3 max-w-xl mx-auto">
+        اختر الصنف المناسب لطبيعة مطبخك واضغط على الزر لتحديد الكمية أو التحدث مباشرة مع مساعد المبيعات الذكي على ماسنجر لمعرفة السعر والكمية المتاحة لحظياً.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- صنف 1 -->
+      <div class="bg-brandCard border border-zinc-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+        <div>
+          <div class="relative h-52">
+            <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=800&auto=format&fit=crop" alt="أرز أبيض بلدي إكسترا فندقي" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 bg-brandRed text-white text-xs font-bold px-3 py-1 rounded-full">الأكثر طلباً للفنادق 5 نجوم</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-black text-white mb-2">أرز أبيض بلدي إكسترا فندقي (عريض - كسر 3%)</h4>
+            <p class="text-zinc-400 text-sm mb-4">حبة كامولينو عريضة فاخرة، فرز إلكتروني فائق النقاء، يتشرب الشوربة بامتياز ويحافظ على لمعانه في البوفيه المفتوح.</p>
+            <div class="space-y-2 text-xs text-zinc-300 bg-zinc-900/90 p-3.5 rounded-xl border border-zinc-800">
+              <div class="flex justify-between"><span>نوع الحبة:</span><strong class="text-white">عريضة فاخرة (Camolino)</strong></div>
+              <div class="flex justify-between"><span>نسبة الكسر:</span><strong class="text-brandRed">3% فقط</strong></div>
+              <div class="flex justify-between"><span>التعبئة:</span><strong class="text-white">شكائر 25 كجم / 50 كجم</strong></div>
+              <div class="flex justify-between"><span>الحد الأدنى للطلب:</span><strong class="text-white">1 طن</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openOrderModal('أرز أبيض بلدي إكسترا فندقي (حبة عريضة - كسر 3%)')"
+             class="w-full bg-brandRed hover:bg-red-700 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition">
+            <i class="fa-brands fa-facebook-messenger text-lg"></i>
+            استعلم عن السعر أو احجز عبر ماسنجر
+          </button>
+        </div>
+      </div>
+
+      <!-- صنف 2 -->
+      <div class="bg-brandCard border border-zinc-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+        <div>
+          <div class="relative h-52">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop" alt="أرز أبيض بلدي ممتاز كسر 5%" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 bg-zinc-900 border border-brandRed text-brandRed text-xs font-bold px-3 py-1 rounded-full">مثالي للمطاعم الكبرى</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-black text-white mb-2">أرز أبيض بلدي ممتاز (عريض - كسر 5%)</h4>
+            <p class="text-zinc-400 text-sm mb-4">معادلة مثالية بين الحبة العريضة الفاخرة والسعر التنافسي لسلاسل المطاعم وقاعات المناسبات وشركات التغذية.</p>
+            <div class="space-y-2 text-xs text-zinc-300 bg-zinc-900/90 p-3.5 rounded-xl border border-zinc-800">
+              <div class="flex justify-between"><span>نوع الحبة:</span><strong class="text-white">عريضة بلدي</strong></div>
+              <div class="flex justify-between"><span>نسبة الكسر:</span><strong class="text-brandRed">5%</strong></div>
+              <div class="flex justify-between"><span>التعبئة:</span><strong class="text-white">شكائر 25 كجم / 50 كجم</strong></div>
+              <div class="flex justify-between"><span>الحد الأدنى للطلب:</span><strong class="text-white">1 طن</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openOrderModal('أرز أبيض بلدي ممتاز (حبة عريضة - كسر 5%)')"
+             class="w-full bg-brandRed hover:bg-red-700 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition">
+            <i class="fa-brands fa-facebook-messenger text-lg"></i>
+            استعلم عن السعر أو احجز عبر ماسنجر
+          </button>
+        </div>
+      </div>
+
+      <!-- صنف 3 -->
+      <div class="bg-brandCard border border-zinc-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+        <div>
+          <div class="relative h-52">
+            <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=800&auto=format&fit=crop" alt="أرز بلدي حبة رفيعة كسر 3%" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded-full">نفشة وإنتاجية عالية</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-black text-white mb-2">أرز أبيض بلدي اقتصادي (رفيع - كسر 3%)</h4>
+            <p class="text-zinc-400 text-sm mb-4">يرمي كمية كبيرة بعد التسوية ومفلفل جداً، الخيار الأول لمطاعم المشويات والكشري والوجبات السريعة.</p>
+            <div class="space-y-2 text-xs text-zinc-300 bg-zinc-900/90 p-3.5 rounded-xl border border-zinc-800">
+              <div class="flex justify-between"><span>نوع الحبة:</span><strong class="text-white">رفيعة بلدي</strong></div>
+              <div class="flex justify-between"><span>نسبة الكسر:</span><strong class="text-brandRed">3%</strong></div>
+              <div class="flex justify-between"><span>التعبئة:</span><strong class="text-white">شكائر 25 كجم / 50 كجم</strong></div>
+              <div class="flex justify-between"><span>الحد الأدنى للطلب:</span><strong class="text-white">2 طن</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openOrderModal('أرز أبيض بلدي اقتصادي (حبة رفيعة - كسر 3%)')"
+             class="w-full bg-brandRed hover:bg-red-700 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition">
+            <i class="fa-brands fa-facebook-messenger text-lg"></i>
+            استعلم عن السعر أو احجز عبر ماسنجر
+          </button>
+        </div>
+      </div>
+
+      <!-- صنف 4 -->
+      <div class="bg-brandCard border border-zinc-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+        <div>
+          <div class="relative h-52">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" alt="أرز توريدات ومصانع كسر 10%" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 bg-zinc-800 border border-zinc-600 text-zinc-200 text-xs font-bold px-3 py-1 rounded-full">أقل سعر طن للتوريدات</span>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-black text-white mb-2">أرز أبيض توريدات ومصانع (رفيع - كسر 10%)</h4>
+            <p class="text-zinc-400 text-sm mb-4">مخصص لشركات الإعاشة، وجبات العاملين بالمصانع والمواقع، المناقصات، والتوريدات الغذائية الضخمة.</p>
+            <div class="space-y-2 text-xs text-zinc-300 bg-zinc-900/90 p-3.5 rounded-xl border border-zinc-800">
+              <div class="flex justify-between"><span>نوع الحبة:</span><strong class="text-white">رفيعة بلدي</strong></div>
+              <div class="flex justify-between"><span>نسبة الكسر:</span><strong class="text-brandRed">10%</strong></div>
+              <div class="flex justify-between"><span>التعبئة:</span><strong class="text-white">شكائر 50 كجم</strong></div>
+              <div class="flex justify-between"><span>الحد الأدنى للطلب:</span><strong class="text-white">5 طن</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openOrderModal('أرز أبيض توريدات ومصانع (حبة رفيعة - كسر 10%)')"
+             class="w-full bg-brandRed hover:bg-red-700 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition">
+            <i class="fa-brands fa-facebook-messenger text-lg"></i>
+            استعلم عن السعر أو احجز عبر ماسنجر
+          </button>
+        </div>
+      </div>
+
+      <!-- صنف 5 -->
+      <div class="bg-brandCard border border-zinc-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between md:col-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+          <div class="relative min-h-[220px]">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop" alt="أرز بسمتي هندي 1121" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full">بيور سيلا هندي 1121</span>
+          </div>
+          <div class="p-6 flex flex-col justify-between">
+            <div>
+              <h4 class="text-xl font-black text-white mb-2">أرز بسمتي هندي ذهبي 1121 (حبة طويلة - كسر 1%)</h4>
+              <p class="text-zinc-400 text-sm mb-4">حبة طويلة جداً تضاعف طولها عند الطبخ دون تكسير، مخصصة لمطاعم المندي والكبسة وقاعات الأفراح والفنادق الكبرى.</p>
+              <div class="space-y-2 text-xs text-zinc-300 bg-zinc-900/90 p-3.5 rounded-xl border border-zinc-800 mb-5">
+                <div class="flex justify-between"><span>نوع الحبة:</span><strong class="text-white">طويلة فاخرة (1121 Sella)</strong></div>
+                <div class="flex justify-between"><span>نسبة الكسر:</span><strong class="text-brandRed">بيور 1% فقط</strong></div>
+                <div class="flex justify-between"><span>التعبئة:</span><strong class="text-white">شكائر 25 كجم</strong></div>
+                <div class="flex justify-between"><span>الحد الأدنى للطلب:</span><strong class="text-white">1 طن</strong></div>
+              </div>
+            </div>
+            <button onclick="openOrderModal('أرز بسمتي هندي ذهبي 1121 (حبة طويلة - كسر 1%)')"
+               class="w-full bg-brandRed hover:bg-red-700 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition">
+              <i class="fa-brands fa-facebook-messenger text-lg"></i>
+              استعلم عن السعر أو احجز عبر ماسنجر
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المدونة المعرفية للشركات والشيفات -->
+  <section id="blog" class="py-20 bg-zinc-950 border-t border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-brandRed font-bold text-sm">مدونة الخطاب لخبراء الضيافة</span>
+          <h3 class="text-2xl md:text-4xl font-black text-white mt-2">مقالات ودراسات جودة الأرز للمحترفين</h3>
+        </div>
+        <p class="text-zinc-400 text-sm mt-2 md:mt-0">دليلك الفني لاختيار الصنف الأنسب لتقليل الهدر في مطبخ منشأتك</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-brandCard border border-zinc-800 rounded-2xl p-6 card-hover">
+          <span class="text-xs font-bold text-brandRed bg-brandRed/10 px-3 py-1 rounded-md">دليل المشتريات الفندقية</span>
+          <h4 class="text-lg font-black text-white mt-4 mb-3">الفرق العملي بين الحبة العريضة والرفيعة في مطابخ الفنادق والمطاعم</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            الحبة العريضة (كسر 3%) تحتوي على نسبة نشا متوازنة تمنحها مظهراً لامعاً وقواماً متماسكاً على سخانات البوفيه المفتوح لساعات طويلة، بينما الحبة الرفيعة تعطي نفشة وحجماً أكبر بنسبة 18%...
+          </p>
+          <button onclick="openDirectChat('السلام عليكم، قرأت مقالكم ومحتاج ترشيحكم لأنسب نوع أرز لمطعمي')" class="text-brandRed text-xs font-bold hover:underline flex items-center gap-1">
+            اسأل خبيرنا على ماسنجر عن الصنف الأنسب لمطبخك <i class="fa-solid fa-arrow-left mr-1"></i>
+          </button>
+        </article>
+
+        <article class="bg-brandCard border border-zinc-800 rounded-2xl p-6 card-hover">
+          <span class="text-xs font-bold text-brandRed bg-brandRed/10 px-3 py-1 rounded-md">معايير الفرز والكسر</span>
+          <h4 class="text-lg font-black text-white mt-4 mb-3">ماذا تعني نسبة كسر 3% مقابل 10%؟ وكيف تؤثر على تكلفة الوجبة؟</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            نسبة الكسر تحدد تجانس التسوية؛ فالأرز كسر 3% يضمن نضج جميع الحبات في نفس الدقيقة دون تكتل، في حين أن كسر 10% يوفر ما يقرب من 3,000 إلى 5,000 جنيه في الطن الواحد لوجبات العاملين...
+          </p>
+          <button onclick="openDirectChat('السلام عليكم، محتاج مقارنة أسعار بين كسر 3% وكسر 10%')" class="text-brandRed text-xs font-bold hover:underline flex items-center gap-1">
+            اطلب مقارنة أسعار الكسر عبر ماسنجر <i class="fa-solid fa-arrow-left mr-1"></i>
+          </button>
+        </article>
+
+        <article class="bg-brandCard border border-zinc-800 rounded-2xl p-6 card-hover">
+          <span class="text-xs font-bold text-brandRed bg-brandRed/10 px-3 py-1 rounded-md">الأرز البسمتي 1121</span>
+          <h4 class="text-lg font-black text-white mt-4 mb-3">إزاي تختبر الأرز البسمتي البيور وتفرق بينه وبين المخلوط قبل الاستلام؟</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+            الأرز البسمتي الهندي الأصلي (سيلا 1121) يتميز بطول الحبة قبل الطبخ (8.3 مم) وعدم تكسره أثناء التقليب في القدور الكبيرة. في شركة الخطاب نضمن لك شهادة نقاء 100%...
+          </p>
+          <button onclick="openDirectChat('السلام عليكم، عايز تفاصيل وأسعار الأرز البسمتي البيور')" class="text-brandRed text-xs font-bold hover:underline flex items-center gap-1">
+            اطلب عينة أرز بسمتي عبر ماسنجر <i class="fa-solid fa-arrow-left mr-1"></i>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم التواصل المباشر Footer CTA -->
+  <section id="contact" class="py-16 max-w-5xl mx-auto px-4 text-center">
+    <div class="bg-gradient-to-br from-zinc-900 via-brandCard to-brandDarkRed/30 border border-brandRed/40 rounded-3xl p-8 md:p-12 red-glow">
+      <h3 class="text-2xl md:text-4xl font-black text-white mb-4">جاهز لتأمين احتياجات منشأتك من الأرز بأفضل سعر طن؟</h3>
+      <p class="text-zinc-300 text-sm md:text-base max-w-2xl mx-auto mb-8">
+        مساعد المبيعات الذكي على فيسبوك ماسنجر متصل مباشرة بمخازننا؛ هيرد عليك فوراً بالكميات المتاحة حالياً وأسعار اليوم، ويحجز طلبيتك في ثواني!
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button onclick="openOrderModal('أرز أبيض بلدي إكسترا فندقي (حبة عريضة - كسر 3%)')"
+           class="bg-brandRed hover:bg-red-700 text-white px-8 py-4 rounded-xl font-black text-base flex items-center justify-center gap-3 transition">
+          <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+          ابدأ المحادثة أو احجز طلبيتك على ماسنجر
+        </button>
+        <a href="tel:+201096741376"
+           class="bg-white text-brandBlack hover:bg-zinc-200 px-8 py-4 rounded-xl font-black text-base flex items-center justify-center gap-3 transition">
+          <i class="fa-solid fa-phone text-brandRed"></i>
+          اتصل بإدارة التوريدات: 01096741376
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-zinc-900 py-8 text-center text-xs text-zinc-500">
+    جميع الحقوق محفوظة © 2026 مجموعة الخطاب لتجارة وتوريد الأرز — مخصص للتوريدات الفندقية والشركات (B2B) | للتواصل: 01096741376
+  </footer>
+
+  <!-- المربع المنبثق (Popup Modal) لتجهيز الطلب أو فتح الشات العادي -->
+  <div id="orderModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-brandCard border border-brandRed/50 rounded-2xl max-w-lg w-full p-6 md:p-8 relative red-glow">
+      <button onclick="closeOrderModal()" class="absolute top-4 left-4 text-zinc-400 hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 class="text-xl font-black text-white mb-1">
+        <i class="fa-brands fa-facebook-messenger text-brandRed ml-2"></i>
+        التواصل مع مبيعات الخطاب (B2B)
+      </h3>
+      <p class="text-xs text-zinc-400 mb-5">تقدر تملا تفاصيل سريعة عشان البوت يجهزلك عرض السعر فوراً، أو تفتح الشات العادي مباشرة</p>
+
+      <div class="space-y-3.5 text-sm">
+        <div>
+          <label class="block text-xs text-zinc-400 mb-1">الصنف المختار</label>
+          <select id="m_product" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none">
+            <option value="أرز أبيض بلدي إكسترا فندقي (حبة عريضة - كسر 3%)">أرز أبيض بلدي إكسترا فندقي (حبة عريضة - كسر 3%)</option>
+            <option value="أرز أبيض بلدي ممتاز (حبة عريضة - كسر 5%)">أرز أبيض بلدي ممتاز (حبة عريضة - كسر 5%)</option>
+            <option value="أرز أبيض بلدي اقتصادي (حبة رفيعة - كسر 3%)">أرز أبيض بلدي اقتصادي (حبة رفيعة - كسر 3%)</option>
+            <option value="أرز أبيض توريدات ومصانع (حبة رفيعة - كسر 10%)">أرز أبيض توريدات ومصانع (حبة رفيعة - كسر 10%)</option>
+            <option value="أرز بسمتي هندي ذهبي 1121 (حبة طويلة - كسر 1%)">أرز بسمتي هندي ذهبي 1121 (حبة طويلة - كسر 1%)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-zinc-400 mb-1">اسم الفندق / الشركة</label>
+            <input id="m_name" type="text" placeholder="مثال: فندق الماسة" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs text-zinc-400 mb-1">رقم الموبايل</label>
+            <input id="m_phone" type="text" placeholder="010xxxxxxxx" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs text-zinc-400 mb-1">الكمية المطلوبة (بالطن)</label>
+            <input id="m_qty" type="number" min="1" value="3" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs text-zinc-400 mb-1">نوع الطلب</label>
+            <select id="m_type" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none">
+              <option value="استفسار عن عرض سعر">استفسار عن عرض سعر</option>
+              <option value="تأكيد طلب شراء وحجز كمية">تأكيد طلب شراء وحجز كمية</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs text-zinc-400 mb-1">رسالة إضافية أو استفسار خاص (اختياري)</label>
+          <input id="m_note" type="text" placeholder="اكتب أي تفاصيل تحب تبعتها للبوت..." class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white focus:border-brandRed outline-none" />
+        </div>
+      </div>
+
+      <div class="mt-6 space-y-2.5">
+        <button onclick="submitModalToMessenger()" class="w-full bg-brandRed hover:bg-red-700 text-white font-black py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition red-glow">
+          <i class="fa-solid fa-paper-plane"></i>
+          إرسال التفاصيل وفتح شات الماسنجر
+        </button>
+
+        <button onclick="skipModalAndChat()" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition">
+          <i class="fa-regular fa-comments text-brandRed"></i>
+          تخطي الفورم وفتح شات الماسنجر لكتابة رسالة عادية
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PAGE_ID = "1397105373478155";
+
+    function openOrderModal(productName) {
+      const select = document.getElementById("m_product");
+      if (productName) select.value = productName;
+      document.getElementById("orderModal").classList.remove("hidden");
+    }
+
+    function closeOrderModal() {
+      document.getElementById("orderModal").classList.add("hidden");
+    }
+
+    function openDirectChat(msgText) {
+      if (msgText) {
+        navigator.clipboard?.writeText(msgText);
+        alert("تم نسخ تفاصيل طلبك تلقائياً! أول ما يفتح شات الصفحة اعمل (لصق / Paste) وابعت الرسالة.");
+      }
+      window.open(`https://www.facebook.com/messages/t/${PAGE_ID}`, "_blank");
+    }
+
+    function submitModalToMessenger() {
+      const product = document.getElementById("m_product").value;
+      const name = document.getElementById("m_name").value.trim() || "عميل شركات";
+      const phone = document.getElementById("m_phone").value.trim() || "بدون رقم";
+      const qty = document.getElementById("m_qty").value || "1";
+      const type = document.getElementById("m_type").value;
+      const note = document.getElementById("m_note").value.trim();
+
+      let msg = "";
+      if (type.includes("تأكيد")) {
+        msg = `السلام عليكم، اعتمدلي وأكد طلب شراء نهائي لـ ${qty} طن من صنف (${product}) باسم ${name} ورقمي ${phone}`;
+      } else {
+        msg = `السلام عليكم، معاك ${name} ورقمي ${phone}، بستفسر عن سعر وتوفر ${qty} طن من صنف (${product})`;
+      }
+      if (note) msg += ` - ملاحظة: ${note}`;
+
+      closeOrderModal();
+      openDirectChat(msg);
+    }
+
+    function skipModalAndChat() {
+      const product = document.getElementById("m_product").value;
+      closeOrderModal();
+      openDirectChat(`السلام عليكم، كنت بستفسر بخصوص ${product}`);
+    }
+  </script>
+
+</body>
+</html>
